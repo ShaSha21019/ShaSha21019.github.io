@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+	<title>今天吃什麼</title>
+
+	<script type="text/javascript" nonce="17f4207716bd45e08c9d141914f" src="//local.adguard.org?ts=1668757424845&amp;type=content-script&amp;dmn=cdn.discordapp.com&amp;pth=%2Fattachments%2F859458975481200671%2F1043070057539969055%2Ffood.html&amp;app=msedge.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;uag="></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'/>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="js/dk-tw-citySelector.js"></script>
+
+	<!-- Google Tag Manager-->
+	<script>
+		(function(w, d, s, l, i){
+			w[l] = w[l] || [];
+
+			w[l].push({
+				'gtm.start': Date.now(),
+				event: 'gtm.js'
+			});
+
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer'? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-PGQ9WQT');
+	</script>
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript)-->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!--  背景圖  -->
+<main class="full-block">
+	<!--  主要內容  -->
+	<div class="main-block">
+
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+			<h1 id="fh5co-logo"><a href="index.html">今天吃什麼？</a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">首頁</a></li>
+					<li class="fh5co-active"><a href="food.html">開抽</a></li>
+					<li><a href="">聯絡我們</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!--  顯示區塊  -->
+		<section class="god">
+			<h1>
+				<span class="wrap">
+					<span>今天要吃什麼呢？</span>
+				</span>
+			</h1>
+		</section>
+
+		<!--  按鈕  -->
+		<section class="btns">
+
+			<!--  start  -->
+			<a class="btn-start" id="start-btn" href="#">
+				<span class="line top -h"></span>
+				<span class="line right -v"></span>
+				<span class="line bottom -h"></span>
+				<span class="line left -v"></span>
+			</a>
+		</section>
+
+		<!--  地圖  -->
+		<section id="map" class="map">
+			<iframe loading="lazy" frameborder="0" style="border:0" src="" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+	</div>
+
+	<div class="top-10">
+		<ul>
+			<li><a>   中式　　　　　　　　　　308次</a></li>
+			<li><a>   東南亞　　　　　　　　　257次</a></li>
+			<li><a>   西式　　　　　　　　　　204次</a></li>
+			<li><a>   麵食　　　　　　　　　　189次</a></li>
+			<li><a>   速食　　　　　　　　　　187次</a></li>
+			<li><a>   日式　　　　　　　　　　158次</a></li>
+			<li><a>   韓式　　　　　　　　 　　96次</a></li>
+			<li><a>   便當　　　　　　　　　　 87次</a></li>
+			<li><a>   港式　　　　　　　　　　 62次</a></li>
+			<li><a>   燒烤　　　　　　　　　　 56次</a></li>
+		</ul>
+		<div id="rank-more">
+			<span class="span-h7"><a href="#">查看更多</a> </span>
+		</div>
+	</div>
+
+	<div id="class-type" class="type-area">
+		<input type="checkbox" value="chinese" >中式<br>
+		<input type="checkbox" value="japan"   >日式<br>
+		<input type="checkbox" value="hongkong">港式<br>
+		<input type="checkbox" value="korea"   >韓式<br>
+		<input type="checkbox" value="western" >西式<br>
+		<input type="checkbox" value="esAsian" >東南亞<br>
+	</div>
+
+	<div id="food-type" class="type-area">
+		<input type="checkbox" value="bento"     >便當<br>
+		<input type="checkbox" value="fastfood"  >速食<br>
+		<input type="checkbox" value="sweets"    >點心<br>
+		<input type="checkbox" value="congee"    >粥品<br>
+		<input type="checkbox" value="vegetarian">素食<br>
+		<input type="checkbox" value="noodles"   >麵食<br>
+		<input type="checkbox" value="drinks"    >飲料<br>
+		<input type="checkbox" value="barbecue"  >燒烤<br>
+	</div>
+
+	<div id="food-time" class="type-area"> 
+		<input type="checkbox" value="Breakfast">早餐<br>
+		<input type="checkbox" value="Lunch"    >午餐<br>
+		<input type="checkbox" value="Dinner"   >晚餐<br>
+	</div>
+
+	<div id="food-price" class="type-area">
+		<input type="checkbox" value="low" >高價位<br>
+		<input type="checkbox" value="mid" >中價位<br>
+		<input type="checkbox" value="high">低價位<br>
+	</div>
+
+	<div id="food-place" class="type-area">
+		<input type="checkbox" value="forHere">內用<br>
+		<input type="checkbox" value="takeout">外帶<br>
+	</div>
+
+	<div class="foodarea">
+		<form id="myForm" style="z-index: 2;">
+			<select id="county" name="county"></select>
+			<select id="district" name="district"></select>
+		</form>
+	</div>
+
+	<script>
+		$(function() {
+			$('form').dk_tw_citySelector('select[name="county"]', 'select[name="district"]');
+		});
+	</script>
+
+
+	<style class="style"></style>
+</main>
+
+<script>
+class Restaurant {
+    #outOrIn = "";
+    #class = [];
+    #type = [];
+    #time = [];
+    #priceLevel = [];
+
+    /** @param {string[]} data */
+    constructor(data) {
+        this.name       = data[0];
+        this.rate       = Number(data[1]);
+        this.#outOrIn   = data[2];
+		this.districtId = data[3];
+        this.position   = data[4];
+        this.phone      = data[5];
+
+        this.#class      = data.slice(6, 11);
+        this.#type       = data.slice(12, 19);
+        this.#time       = data.slice(20, 23);
+        this.#priceLevel = data.slice(24);
+    }
+
+    get takeOut() {
+        return this.#outOrIn.includes("外帶");
+    }
+
+    get forHere() {
+        return this.#outOrIn.includes("內用");
+    }
+
+    get classes() {
+        let c = ["chinese", "japan", "hongkong", "korea", "western", "esAsian"];
+        let out = [];
+
+        for (let i = 0; i < c.length; i++) {
+            if (this.#class[i] == "1") {
+                out.push(c[i]);
+            }
+        }
+
+        return out;
+    }
+
+    get type() {
+        let t = ["bento", "fastfood", "sweets", "congee", "vegetarian", "noodles", "drinks", "barbecue"];
+        let out = [];
+
+        for (let i = 0; i < t.length; i++) {
+            if (this.#type[i] == "1") {
+                out.push(t[i]);
+            }
+        }
+
+        return out;
+    }
+
+    get time() {
+        let t = ["Breakfast", "Lunch", "Dinner"];
+        let out = [];
+
+        for (let i = 0; i < t.length; i++) {
+            if (this.#time[i] == "1") {
+                out.push(t[i]);
+            }
+        }
+
+        return out;
+    }
+
+    get priceLevel() {
+        let l = ["low", "mid", "high"];
+        let out = [];
+
+        for (let i = 0; i < l.length; i++) {
+            if (this.#priceLevel[i] == "1") {
+                out.push(l[i]);
+            }
+        }
+
+        return out;
+    }
+
+	get inOrOut() {
+		let out = [];
+		if (this.forHere) out.push('forHere');
+		if (this.takeOut) out.push('takeOut');
+
+		return out;
+	}
+
+	toString() {
+		return this.name;
+	}
+}
+
+class SheetFetcher {
+	#options;
+
+	/** @param {{ apiKey: string, sheetId: string }} options */
+	constructor(options) {
+		this.#options = options;
+	}
+
+	get apiKey() {
+		return this.#options.apiKey;
+	}
+
+	getUri(sheetName) {
+		let { apiKey, sheetId } = this.#options;
+		return encodeURI(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}?alt=json&key=${apiKey}`);
+	}
+
+	async getData(county) {
+		let self = this;
+
+		let res = await fetch(self.getUri(county));
+		let data = await res.json();
+
+		/** @type {Restaurant[]} */
+		let restaurants = data.values.slice(1).map(function(d) {
+			return new Restaurant(d);
+		});
+
+		return restaurants;
+	}
+}
+</script>
+<script>
+	// Maps Embed API、Google Sheets API 的 金鑰
+	// 可由 https://console.developers.google.com/apis 申請
+
+	const sheetFetcher = new SheetFetcher({
+		apiKey: 'AIzaSyC36iVXrwBcSwp-a4_S69M7czLXfh_xpOg',
+		sheetId: '1dEFvO6FHJz1GmWFycO3_Q7PAqyz-kHq0oIIJnIaZQqA'
+	});
+
+	const duration = 2000; // 拉霸效果執行多久
+
+	/**
+	 * @template T
+	 * @param {Array<T>} arr
+	 */
+	function getRandomElement(arr) {
+		return arr[Math.floor(Math.random() * arr.length)];
+	}
+
+	$(document).ready(function() {
+		//let restaurants = await sheetFetcher.getData('FoodE');
+
+		const Map = document.querySelector('#map iframe');
+		const Slot = document.querySelector('.wrap');
+		const Style = document.querySelector('.style');
+		const DataList = Slot.childNodes;
+		const StartBtn = $("#start-btn");
+
+		function getValues($name) {
+			let out = [];
+			$($name + " > input[type='checkbox']:checked").each(function() {
+				out.push($(this).val());
+			});
+			return out;
+		}
+
+		function check(selArr, compareArr) {
+			return !selArr.length || compareArr.some(function(c) { return selArr.includes(c); });
+		}
+
+		StartBtn.click(async function(e) {
+			e.preventDefault();
+
+			let county = $('#county').val();
+			if (!county.length) {
+				DataList[0].innerText = "請選擇地區！";
+				return;
+			}
+			let districtId = $('#district option:selected').attr('data-zip');
+			console.log(districtId);
+
+			let restaurants = await sheetFetcher.getData(county).catch(function() { return []; });
+
+			let classType = getValues("#class-type");
+			let foodType  = getValues("#food-type");
+			let foodTime  = getValues("#food-time");
+			let foodPrice = getValues("#food-price");
+			let inOrOut   = getValues("food-place");
+			
+			// 過濾過的餐廳
+			let selected = restaurants.filter(function(rest) {
+				return (
+					(!districtId || rest.districtId == districtId) &&
+					check(classType, rest.classes) &&
+					check(foodType , rest.type) &&
+					check(foodTime , rest.time) &&
+					check(foodPrice, rest.priceLevel) &&
+					check(inOrOut  , rest.inOrOut)
+				);
+			});
+
+			console.log(selected);
+			let { length } = selected;
+
+			if (!length) {
+				DataList[0].innerText = "沒有符合的餐廳！";
+				return;
+			}
+
+			Map.classList.add('hidden');
+
+			Slot.innerHTML = '';
+			for (let rest of selected) {
+				Slot.insertAdjacentHTML('beforeend', '<span>' + rest.name + '</span>');
+			}
+
+			e.target.classList.add('not-allow');
+			// console.log(DataList);
+
+			Array.prototype.forEach.call(DataList, l => l.classList.add('span-' + length));
+
+			Style.innerHTML = `
+			@-webkit-keyframes spin-${length} {
+				from { top: 0; }
+				to { top: calc(-73px * ${length}); }
+			}
+
+			@keyframes spin-${length} {
+				from { top: 0; }
+				to { top: calc(-73px * ${length}); }
+			}
+
+			.god .wrap > .span-${length} {
+				-webkit-animation-name: spin-${length};
+				animation-name: spin-${length};
+				-webkit-animation-duration: 0.75s;
+				animation-duration: 0.75s;
+			}`;
+
+			let ans = getRandomElement(selected);
+			console.log(ans);
+			DataList[0].innerText = ans.name;
+
+			setTimeout(function() {
+				Array.prototype.forEach.call(DataList, l => l.removeAttribute('class'));
+				Map.src = 'https://www.google.com/maps/embed/v1/place?key=' + sheetFetcher.apiKey + '&q=' + ans.name;
+			}, duration);
+
+			setTimeout(function() {
+				Map.classList.remove('hidden');
+				e.target.classList.remove('not-allow');
+			}, duration + 600);
+		});
+	});
+</script>
+</body>
+</html>
